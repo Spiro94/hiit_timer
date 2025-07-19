@@ -68,9 +68,12 @@
       "label": "[App] Build Runner (Watch)",
       "type": "shell",
       "group": "build",
-      "command": "bash",
+      "command": "powershell.exe",
       "args": [
-        "${workspaceFolder}/.vscode/tasks/app/build_runner_watch.sh"
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "${workspaceFolder}/.vscode/tasks/app/build_runner_watch.ps1"
       ],
       "options": {
         "cwd": "${workspaceFolder}/app"
@@ -117,9 +120,12 @@
       "label": "[App] Prebuild (Once)",
       "type": "shell",
       "group": "build",
-      "command": "bash",
+      "command": "powershell.exe",
       "args": [
-        "${workspaceFolder}/.vscode/tasks/app/prebuild_once.sh"
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "${workspaceFolder}/.vscode/tasks/app/prebuild_once.ps1"
       ],
       "options": {
         "cwd": "${workspaceFolder}/app"
@@ -141,9 +147,12 @@
       "label": "[App] Slang (Watch)",
       "type": "shell",
       "group": "build",
-      "command": "bash",
+      "command": "powershell.exe",
       "args": [
-        "${workspaceFolder}/.vscode/tasks/app/slang_watch.sh"
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "${workspaceFolder}/.vscode/tasks/app/slang_watch.ps1"
       ],
       "options": {
         "cwd": "${workspaceFolder}/app"
@@ -165,9 +174,12 @@
       "label": "[App] Test Gallery (Serve)",
       "type": "shell",
       "group": "build",
-      "command": "bash",
+      "command": "powershell.exe",
       "args": [
-        "${workspaceFolder}/.vscode/tasks/app/test_gallery_serve.sh"
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "${workspaceFolder}/.vscode/tasks/app/test_gallery_serve.ps1"
       ],
       "options": {
         "cwd": "${workspaceFolder}/app"
@@ -201,9 +213,12 @@
       "label": "[Project] Direnv Allow",
       "type": "shell",
       "group": "build",
-      "command": "bash",
+      "command": "powershell.exe",
       "args": [
-        "${workspaceFolder}/.vscode/tasks/project/direnv_allow.sh"
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "${workspaceFolder}/.vscode/tasks/project/direnv_allow.ps1"
       ],
       "options": {
         "cwd": "${workspaceFolder}"
@@ -213,9 +228,12 @@
       "label": "[Project] Documentation (Serve)",
       "type": "shell",
       "group": "build",
-      "command": "bash",
+      "command": "powershell.exe",
       "args": [
-        "${workspaceFolder}/.vscode/tasks/project/documentation_serve.sh"
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "${workspaceFolder}/.vscode/tasks/project/documentation_serve.ps1"
       ],
       "options": {
         "cwd": "${workspaceFolder}"
@@ -225,9 +243,12 @@
       "label": "[Supabase] Start",
       "type": "shell",
       "group": "build",
-      "command": "bash",
+      "command": "powershell.exe",
       "args": [
-        "${workspaceFolder}/.vscode/tasks/supabase/start.sh"
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "${workspaceFolder}/.vscode/tasks/supabase/start.ps1"
       ],
       "options": {
         "cwd": "${workspaceFolder}"
@@ -241,9 +262,12 @@
       "label": "[Supabase] Stop",
       "type": "shell",
       "group": "build",
-      "command": "bash",
+      "command": "powershell.exe",
       "args": [
-        "${workspaceFolder}/.vscode/tasks/supabase/stop.sh"
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "${workspaceFolder}/.vscode/tasks/supabase/stop.ps1"
       ],
       "options": {
         "cwd": "${workspaceFolder}"
@@ -304,9 +328,12 @@
       "label": "[Supabase] Functions (Serve)",
       "type": "shell",
       "group": "build",
-      "command": "bash",
+      "command": "powershell.exe",
       "args": [
-        "${workspaceFolder}/.vscode/tasks/supabase/functions_serve.sh"
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "${workspaceFolder}/.vscode/tasks/supabase/functions_serve.ps1"
       ],
       "options": {
         "cwd": "${workspaceFolder}"

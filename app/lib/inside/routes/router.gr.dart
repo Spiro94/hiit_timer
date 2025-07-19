@@ -112,10 +112,9 @@ class ResetPasswordLinkSent_Route
     builder: (data) {
       final queryParams = data.queryParams;
       final args = data.argsAs<ResetPasswordLinkSent_RouteArgs>(
-        orElse:
-            () => ResetPasswordLinkSent_RouteArgs(
-              email: queryParams.optString('email'),
-            ),
+        orElse: () => ResetPasswordLinkSent_RouteArgs(
+          email: queryParams.optString('email'),
+        ),
       );
       return WrappedRoute(
         child: ResetPasswordLinkSent_Page(email: args.email, key: args.key),

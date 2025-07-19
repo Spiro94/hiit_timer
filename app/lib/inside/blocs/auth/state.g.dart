@@ -7,9 +7,9 @@ part of 'state.dart';
 // **************************************************************************
 
 Auth_State _$Auth_StateFromJson(Map<String, dynamic> json) => Auth_State(
-      status: $enumDecode(_$Auth_StatusEnumMap, json['status']),
-      accessToken: json['accessToken'] as String?,
-    );
+  status: $enumDecode(_$Auth_StatusEnumMap, json['status']),
+  accessToken: json['accessToken'] as String?,
+);
 
 Map<String, dynamic> _$Auth_StateToJson(Auth_State instance) =>
     <String, dynamic>{
